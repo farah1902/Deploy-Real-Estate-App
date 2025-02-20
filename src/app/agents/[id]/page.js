@@ -14,7 +14,7 @@ export default function AgentSingle({params}) {
     const [agent, setAgent] = useState({});
 
     const fetchData = () => {
-        fetch(`http://localhost:4000/agents/${id}`)
+        fetch(`https://real-estate-json-server-api-1.onrender.com/agents/${id}`)
             .then(res => res.json())
             .then(data => {
                 setAgent(data);

@@ -20,7 +20,7 @@ export default function PropertiesSection() {
     const [properties, setProperties] = useState([]); // stock data into local state variable and map it into slide comp
 
     const fetchData = () => {
-        fetch('http://localhost:4000/properties')
+        fetch('https://real-estate-json-server-api-1.onrender.com/properties')
         .then(response => response.json())
         .then(data => {
             setProperties(data);

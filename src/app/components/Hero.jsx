@@ -20,7 +20,7 @@ export default function Hero() {
     const [slides, setSlides] = useState([]);  /* stock data into local state variable and map it into slide comp */
 
     const fetchData = () => {
-        fetch('http://localhost:4000/slides')
+        fetch('https://real-estate-json-server-api-1.onrender.com/slides')
         .then(response => response.json())
         .then(data => {
             setSlides(data);

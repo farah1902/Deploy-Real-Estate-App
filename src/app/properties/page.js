@@ -12,7 +12,7 @@ export default function PropertiesList() {
     const [properties, setProperties] = useState([]);
 
     const fetchData = () => {
-        fetch('http://localhost:4000/properties')
+        fetch('https://real-estate-json-server-api-1.onrender.com/properties')
         .then(response => response.json())
         .then(data => {
             setProperties(data);

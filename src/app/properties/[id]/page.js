@@ -60,7 +60,7 @@ export default function PropertySingle({ params }) {
 
     const fetchAgentData = async (agentId) => {
         try {
-            const response = await fetch(`http://localhost:4000/agents/${agentId}`);
+            const response = await fetch(`https://real-estate-json-server-api-1.onrender.com/agents/${agentId}`);
             if (!response.ok) {
                 throw new Error(`HTTP error! Status: ${response.status}`);
             }
@@ -74,7 +74,7 @@ export default function PropertySingle({ params }) {
 
     const fetchData = async () => {
         try {
-            const response = await fetch(`http://localhost:4000/properties/${id}`);
+            const response = await fetch(`https://real-estate-json-server-api-1.onrender.com/properties/${id}`);
             if (!response.ok) {
                 throw new Error(`HTTP error! Status: ${response.status}`);
             }
